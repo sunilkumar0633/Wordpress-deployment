@@ -17,7 +17,7 @@ services:
       - db
     image: sunilkumar06/project_wordpress:latest
     ports:
-      - "8088:80"
+      - "80:80"
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
