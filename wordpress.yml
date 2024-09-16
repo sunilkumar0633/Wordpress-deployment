@@ -2,9 +2,9 @@
   hosts: docker-vm
   tasks:
     - name: Run the Docker bulid
-      shell: docker-compose build --no-cache
+      shell: docker-compose -f /root/ansible/docker-compose.yml build --no-cache
       
 
     - name: Run the Docker container
-      shell: docker-compose up -d
+      shell: docker-compose  -f /root/ansible/docker-compose.yml build up -d
       
