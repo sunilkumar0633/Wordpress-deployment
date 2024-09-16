@@ -15,7 +15,7 @@ services:
   wordpress:
     depends_on:
       - db
-    image: project_wordpress:latest
+    image: sunilkumar06/project_wordpress:latest
     ports:
       - "80:80"
     environment:
